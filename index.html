@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+  <script src="https://kit.fontawesome.com/4fb482c879.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="favicon" href="./assets/favicon/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>MessengeBert</title>
+</head>
+
+<body>
+  <h1 class="appName">MessengeBert</h1>
+  <div class="messageUsers">
+    <div class="memberChat">
+      <h3 class="activeUsers">Aktivne osobe u chatu:</h3>
+      <p class="activeNow"></p>
+    </div>
+    <div class="messageBox"></div>
+  </div>
+  <form class="formMsg" onsubmit="return false;">
+    <input class="inputMsg" id="msgInput" placeholder="Poruka..." type="text" maxlength="280" />
+    <button class="sendMsg" id="sendBtn" type="submit" value="send">
+      <img src="./assets/images/send.png" class="sendImg" />
+    </button>
+  </form>
+  <div class="changeTheme">
+    <input type="checkbox" id="darkmode-toggle" class="darkmode-input">
+    <label for="darkmode-toggle" class="darkmode">
+      <i class="fa-regular fa-sun" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
+    </label>
+  </div>
+  <script src="./script/scaledrone.js"></script>
+  <script src="./script/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Seminarski rad - Robert Mesić
+-------------------------------
+
+* Seminarski rad također je dostupan i na GitHub-u:
+GitHub -> https://github.com/robertmesic/algebra-seminarskirad.git
+
+* Seminarski rad je postavljen na polaznički portal u zip formatu.

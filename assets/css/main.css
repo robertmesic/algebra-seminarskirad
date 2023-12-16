@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  flex-direction: column;
+}
+
+.appName {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.messageUsers {
+  margin-top: 20px;
+  display: flex;
+  overflow: auto;
+}
+
+.memberChat {
+  width: 20%;
+  font-family: 'Nunito';
+  border: none;
+  color: white;
+}
+
+.memberChat h3 {
+  text-align: center;
+}
+
+.memberChat .activeNow {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.messageBox {
+  overflow: auto;
+  border: none;
+  padding: 10px;
+  background-color: gray;
+  font-family: 'Nunito';
+  color: white;
+}
+
+.messageBox {
+  position: relative;
+  width: 80%;
+  height: 60vh;
+  clear: both;
+  float: left;
+  overflow: auto;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+.currentMember {
+  float: right !important;
+}
+
+.message .member {
+  display: inline-block;
+}
+
+.message {
+  position: relative;
+  display: block;
+  float: left;
+  clear: both;
+  padding: 5px 0;
+  margin: 0px 5px 0 0;
+  max-width: 50vw;
+  font-size: 15px;
+}
+
+.name, span {
+  text-transform: uppercase;
+}
+
+.member {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 34px;
+  padding-right: 2em;
+}
+
+.formMsg {
+  display: flex;
+  word-wrap: break-word;
+}
+
+.inputMsg {
+  width: 80%;
+  margin-left: 20%;
+  border: none;
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+.inputMsg:focus {
+  background-color: white;
+  outline: none;
+}
+
+.messageText {
+  margin-top: 10px;
+  font-size: 22px;
+  overflow-wrap: break-word;
+  background-color: rgb(0, 102, 255);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sendMsg {
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.name {
+  margin-top: 1.5em;
+}
+
+.sendImg {
+  position: relative;
+  width: 35px;
+  margin: 0.5em 0.5em;
+}
+
+.changeTheme {
+  margin: 100px 0 0 100px;
+}
+
+.darkmode {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+.darkmode:after {
+  content: "";
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 37px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.darkmode-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.darkmode-input:checked + .darkmode {
+  background: #242424;
+}
+
+.darkmode-input:checked + .darkmode:after {
+  left: 140px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,#777,#3a3a3a);
+}
+
+.darkmode, .darkmode:after {
+  transition: 0.3s
+}
+
+.darkmode:active:after{ 
+  width: 60px; 
+}
+
+.darkmode i {
+  position: absolute;
+  font-size: 25px;
+  top: 13px;
+  z-index: 100;
+}
+
+.darkmode .fa-sun {
+  left: 16px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.darkmode .fa-moon {
+  left: 110px;
+  fill:#7e7e7e;
+  transition: 0.3s;
+}
+
+.darkmode-input:checked + .darkmode svg.sun {
+  fill:#7e7e7e;
+}
+
+.darkmode-input:checked + .darkmode svg.moon {
+  fill:#fff;
+}
+
+.time-date {
+  margin-top: 1em;
+  font-size: 0.9em;
+  text-align: end;
+  color: black;
+  font-weight: 500;
+}
